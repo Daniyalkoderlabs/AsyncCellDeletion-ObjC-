@@ -8,10 +8,11 @@
 
 #import "Activitycell.h"
 #import "ViewController.h"
+#import "DGActivityIndicatorView.h"
 @implementation Activitycell {
     
     __weak IBOutlet UIView *viewOverlay;
-    __weak IBOutlet UIActivityIndicatorView *indicatorView;
+    __weak IBOutlet DGActivityIndicatorView *indicatorView;
     __weak IBOutlet UILabel *lblTitle;
     ActivitycellType currentType;
     ActivityData *currentData;
@@ -19,6 +20,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    indicatorView.type = DGActivityIndicatorAnimationTypeBallClipRotateMultiple;
     currentType = NONOVERLAY;
     // Initialization code
 }
