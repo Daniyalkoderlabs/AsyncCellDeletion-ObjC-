@@ -13,6 +13,8 @@
 		2E019BC321749A4B0096DD3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E019BC221749A4B0096DD3B /* Assets.xcassets */; };
 		2E019BC621749A4B0096DD3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E019BC421749A4B0096DD3B /* LaunchScreen.storyboard */; };
 		2E019BC921749A4B0096DD3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E019BC821749A4B0096DD3B /* main.m */; };
+		2E019BD221749A8E0096DD3B /* Activitycell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E019BD021749A8E0096DD3B /* Activitycell.m */; };
+		2E019BD321749A8E0096DD3B /* Activitycell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E019BD121749A8E0096DD3B /* Activitycell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		2E019BC521749A4B0096DD3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E019BC721749A4B0096DD3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E019BC821749A4B0096DD3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E019BCF21749A8E0096DD3B /* Activitycell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Activitycell.h; sourceTree = "<group>"; };
+		2E019BD021749A8E0096DD3B /* Activitycell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Activitycell.m; sourceTree = "<group>"; };
+		2E019BD121749A8E0096DD3B /* Activitycell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Activitycell.xib; sourceTree = "<group>"; };
+		2E019BD421749BC00096DD3B /* AppEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppEnum.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		2E019BB821749A490096DD3B /* AsyncCellDeletion */ = {
 			isa = PBXGroup;
 			children = (
+				2E019BD421749BC00096DD3B /* AppEnum.h */,
 				2E019BB921749A490096DD3B /* AppDelegate.h */,
 				2E019BBA21749A490096DD3B /* AppDelegate.m */,
 				2E019BBC21749A490096DD3B /* ViewController.h */,
@@ -67,6 +74,9 @@
 				2E019BC421749A4B0096DD3B /* LaunchScreen.storyboard */,
 				2E019BC721749A4B0096DD3B /* Info.plist */,
 				2E019BC821749A4B0096DD3B /* main.m */,
+				2E019BCF21749A8E0096DD3B /* Activitycell.h */,
+				2E019BD021749A8E0096DD3B /* Activitycell.m */,
+				2E019BD121749A8E0096DD3B /* Activitycell.xib */,
 			);
 			path = AsyncCellDeletion;
 			sourceTree = "<group>";
@@ -130,6 +140,7 @@
 			files = (
 				2E019BC621749A4B0096DD3B /* LaunchScreen.storyboard in Resources */,
 				2E019BC321749A4B0096DD3B /* Assets.xcassets in Resources */,
+				2E019BD321749A8E0096DD3B /* Activitycell.xib in Resources */,
 				2E019BC121749A490096DD3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +154,7 @@
 			files = (
 				2E019BBE21749A490096DD3B /* ViewController.m in Sources */,
 				2E019BC921749A4B0096DD3B /* main.m in Sources */,
+				2E019BD221749A8E0096DD3B /* Activitycell.m in Sources */,
 				2E019BBB21749A490096DD3B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

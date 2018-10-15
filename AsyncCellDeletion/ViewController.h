@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+
+@interface ActivityData : NSObject {
+    @public
+    NSString *activitytId;
+    NSMutableDictionary *cdata;
+    bool currentProgress;
+}
+- (void)addData: (NSString *)activityId andWithData: (NSMutableDictionary *)data andWithProgress: (BOOL)progress;
+@end
+
+
 @interface ViewController : UIViewController
 
 
