@@ -204,7 +204,7 @@
 
 
 #pragma MARK - ACTIVITY CELL DELEGTATE
-
+//ls | xargs -P10 -I{} git -C {} pull
 -(void)didTappedDelete:(ActivitycellType)type withCurrentData:(ActivityData *)data andWithCell:(UITableViewCell *)cell {
     
     if (type == NONOVERLAY) {
