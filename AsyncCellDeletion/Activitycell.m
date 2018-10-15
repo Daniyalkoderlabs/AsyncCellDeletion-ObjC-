@@ -11,6 +11,7 @@
 #import "DGActivityIndicatorView.h"
 @implementation Activitycell {
     
+    __weak IBOutlet UIButton *btnDelete;
     __weak IBOutlet UIView *viewOverlay;
     __weak IBOutlet DGActivityIndicatorView *indicatorView;
     __weak IBOutlet UILabel *lblTitle;
@@ -20,9 +21,16 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    btnDelete.layer.cornerRadius = btnDelete.frame.size.height / 2.0;
+    btnDelete.layer.masksToBounds = YES;
     indicatorView.type = DGActivityIndicatorAnimationTypeBallClipRotateMultiple;
     currentType = NONOVERLAY;
     // Initialization code
+}
+
+-(void)prepareForReuse {
+    [super prepareForReuse];
+    btnDelete.backgroundColor = [UIColor redColor];
 }
 
 - (void)bindData: (ActivityData *)data {
@@ -52,7 +60,7 @@
 }
 
 - (IBAction)didTappedDelete:(UIButton *)sender {
-    
+    sender.backgroundColor = [UIColor lightGrayColor];
     if (self.delegate && [self.delegate respondsToSelector:@selector(didTappedDelete:withCurrentData:andWithCell:)]) {
         
         [self.delegate didTappedDelete:NONOVERLAY withCurrentData:currentData andWithCell:self];
