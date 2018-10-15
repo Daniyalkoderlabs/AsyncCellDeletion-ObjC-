@@ -30,7 +30,7 @@
 
 -(void)prepareForReuse {
     [super prepareForReuse];
-    btnDelete.backgroundColor = [UIColor redColor];
+    //btnDelete.backgroundColor = [UIColor redColor];
 }
 
 - (void)bindData: (ActivityData *)data {
@@ -69,11 +69,13 @@
 }
 
 - (void)showOverlay {
+    btnDelete.backgroundColor = [UIColor lightGrayColor];
     [indicatorView startAnimating];
     [viewOverlay setHidden:NO];
 }
 
 - (void)hideOverlay {
+    btnDelete.backgroundColor = [UIColor redColor];
     [indicatorView stopAnimating];
     [viewOverlay setHidden:YES];
 }
